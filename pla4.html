@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title> RDR PLA4 </title>
+    </head>
+    <body bgcolor ="#7610ad">
+
+        <center><h1>Recursive Descent Recognizer</h1></center>
+        <hr>
+
+        <form>
+        <fieldset>
+        <legend><b>Grammar for Arithmatic Expression</b></legend>
+        <p>
+            EXP ::= EXP + TERM | EXP - TERM | TERM <br>
+            TERM ::= TERM * FACTOR | TERM / FACTOR | FACTOR <br>
+            FACTOR ::= (EXP) | DIGIT <br>
+            DIGIT ::= 0|1|2|3|4|5|6|7|8|9 <br>
+        </p>
+        </fieldset>
+        </form>
+
+        <form>
+        <fieldset>
+        <legend><b>Sample Test Strings</b></legend>
+        <p>
+            Example of some valid strings: <br>
+            => 1+2$ <br>
+            => 0-3*2$ <br>
+            => 2*(3+1)$ <br>
+            Example of some invalid strings: <br>
+            => 1+2 <br>
+            => 1*4$ <br>   
+            => 1*a$ <br>
+        </p>
+        </fieldset>
+        </form>
+
+        <p>
+            <script type="text/javascript" src="scanner.js"></script>
+            <form id="inputForm" action="#">Input String: 
+            <input type="text" name="name" id="input">
+            <input type="button" name="submit" value="Submit" onclick="scanner();"><br>
+            </form>
+            <b><p id="output"></p></b>
+            <p>
+                <hr>
+
+                <h2>Brief Summary</h2>
+                <p>
+                    Creating this recursive descent recognizer took some practice and time learning. I chose to use javascript for this project, with very little <br>
+                    experience with the language. However, after using <a href="www.w3schools.com/js/">W3Schools</a> tutorials and tips, I was able to put the <br>
+                    RDR together. It was a fun project to create and definetly applicable to the real world. I look forward to futher my knowledge in both HTML <br>
+                    and javascript.
+                </p>
+            </p>
+        </p>
+    </body>
+</html>

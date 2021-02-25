@@ -1,19 +1,20 @@
-Part B:
+Created for CSC 139 at CSUS
 
-go to directory with partb.c
-	gcc partb.c -o partB
-	partB | partB -s [Throws Exception]| partB -s -l [Throws Exception]
-----------------------------------------------------------------------------------------
+System information for Linux Systems. Returns the following information:
+CPU Model
+Version of Linux
+Time since last system reboot
+CPU time spent [User/System/Idle]
+Total Memory
+Available Memory
+Disk Read/Write Requests
+# of Context Switches
+Total # of Processes
 
-Part C:
-
-go to directory with partc.c
-	gcc partc.c -o partC
-	partC | partC [-s] (Throws Exception)| partC [-s] [-l int dur] (Throws Exception)
 
 -----------------------------------------------------------------------------------------
 
-Part D:
+To Run:
 
 go to directory with partd.c
 	gcc partd.c -o partD
